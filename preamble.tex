@@ -28,4 +28,10 @@
     \end{spacing}
 }
 
-
+\newenvironment{columnframe}[1]{
+    \begin{frame}[environment=columnframe,fragile]{#1}
+        \begin{columns}
+            }{
+        \end{columns}
+    \end{frame}
+}
