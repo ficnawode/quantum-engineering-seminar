@@ -1,0 +1,14 @@
+*.aux 
+*.toc
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.out
+*.nav
+*.snm
+*.pdf
+*.vrb
+*.synctex.gz
+*syntex*
