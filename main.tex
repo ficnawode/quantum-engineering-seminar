@@ -1,7 +1,7 @@
 \input{./preamble.tex}
 
 \title{Enhanced Radars}
-    \subtitle{and curious properties of Rydberg Atoms}
+    \subtitle{Electromagnetic Properties of Rydberg Atoms}
 \author{Tobiasz Fic}
 \date{28 May 2024}
 
@@ -20,6 +20,7 @@
         \begin{figure}
             \centering
             \includegraphics[width=\textwidth]{images/radar_demo.png}
+            \imagesource{https://www.skyradar.com/blog/radar-principle}
         \end{figure}
     \end{column}
     \begin{column}{0.5\textwidth}
@@ -35,6 +36,7 @@
         \begin{figure}
             \centering
             \includegraphics[width=\textwidth]{images/satellite_demo.png}
+            \imagesource{Darmindra Arumugam (NASA): Quantum Rydberg Radar (presentation)}
         \end{figure}
     \end{column}
     \begin{column}{0.5\textwidth}
@@ -61,40 +63,44 @@
             \begin{figure}
                 \centering
                 \includegraphics[width=0.8\textwidth]{images/radar_antenna_huge.jpg}
+                \imagesource{https://en.wikipedia.org/wiki/Radar}
             \end{figure}
         \end{column}
     \end{columns}
 \end{frame}
-
-\begin{columnframe}{Curious properties of Alkali Metals}
-    \begin{column}{0.5\textwidth}
-        \begin{figure}
-            \centering
-            \includegraphics[width=0.8\textwidth]{images/alkali_metals_tb_of_elements.png}
-        \end{figure}
-    \end{column}
-    \begin{column}{0.5\textwidth}
-        \begin{itemize}
-            \item Alkali metals only have one electron on the outermost shell
-            \item They are easy to excite and predictable
-            \item Lasers! (We like lasers: simple and precise)
-        \end{itemize}
-    \end{column}
-\end{columnframe}
 
 \begin{columnframe}{Rydberg atoms}
     \begin{column}{0.5\textwidth}
         \begin{figure}
             \centering
             \includegraphics[width=0.6\textwidth]{images/pusheen.png}
+
         \end{figure}
     \end{column}
     \begin{column}{0.5\textwidth}
         \begin{itemize}
-            \item A Rydberg atom is an atom in which the outer electron is in a highly excited state.
+            \item A Rydberg atom is an atom in which the outer electron is in a highly excited state (high quantum number $n$).
             \item Very sensitive to disturbances in the electric field.
-            \item Tuned with lasers, read-out with lasers
-            \item Alkali: $Cs^{55}$, or $Rb^{37}$
+                  % \item Tuned with lasers, read-out with lasers
+                  % \item Alkali: $Cs^{55}$, or $Rb^{37}$
+        \end{itemize}
+    \end{column}
+\end{columnframe}
+
+\begin{columnframe}{Curious properties of Alkali Metals}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.7\textwidth]{images/alkali_metals_tb_of_elements.png}
+            \imagesource{https://www.geeksforgeeks.org/alkali-metals/}
+        \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+        \begin{itemize}
+            \item Alkali metals only have one electron on the outermost shell
+            \item Easy to excite - with lasers
+            \item Predictable - stable isotopes, well-studied, only the outer electron remains mobile
+            \item Most commonly used: \ce{^{133}_{55}Cs}, or \ce{^{85}_{37}Rb}
         \end{itemize}
     \end{column}
 \end{columnframe}
@@ -104,6 +110,7 @@
         \begin{figure}
             \centering
             \includegraphics[width=0.8\textwidth]{images/detection_diagram.png}
+            \imagesource{Chris Holloway: Rydberg Atom Based Sensors (presentation at UTC College)}
         \end{figure}
     \end{column}
     \begin{column}{0.5\textwidth}
@@ -123,6 +130,7 @@
         \begin{figure}
             \centering
             \includegraphics[width=\textwidth]{images/rydberg_eit.png}
+            \imagesource{Chris Holloway: Rydberg Atom Based Sensors (presentation at UTC College)}
         \end{figure}
     \end{column}
     \begin{column}{0.5\textwidth}
@@ -135,59 +143,79 @@
     \end{column}
 \end{columnframe}
 
-\begin{columnframe}{Measuring RF field phase}
-    \begin{column}{0.5\textwidth}
-        \begin{figure}
-            \centering
-            \includegraphics[width=0.6\textwidth]{images/pusheen.png}
-        \end{figure}
-    \end{column}
-    \begin{column}{0.5\textwidth}
-        \begin{itemize}
-            \item one
-            \item two
-            \item three
-        \end{itemize}
-    \end{column}
-\end{columnframe}
+\begin{frame}{Measuring RF field phase}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{images/rydberg_phase_measurement.png}
+        \imagesource{Chris Holloway: Rydberg Atom Based Sensors (presentation at UTC College)}
+    \end{figure}
+\end{frame}
 
 \begin{columnframe}{Repercussions}
-    \begin{column}{0.48\textwidth}
+    \begin{column}{0.9\textwidth}
         \begin{itemize}
             \item These new detectors can measure wide frequency spectrums (up to terahertz!)
             \item Radar accuracy will be increased
             \item Applications in Astronomy (RF telescope from space)
-        \end{itemize}
-    \end{column}
-    \begin{column}{0.48\textwidth}
-        \begin{itemize}
-            \item one
-            \item two
-            \item three
+            \item Since phase measurement is possible, we can also use them for telecommunications
         \end{itemize}
     \end{column}
 \end{columnframe}
 
-\begin{columnframe}{NIST: measuring standards}
+\begin{columnframe}{Measuring standards}
     \begin{column}{0.48\textwidth}
         \begin{itemize}
+            \item BIPM: Bureau International des Poids et Mesures (France)
+            \item NIST: National Institute of Standards and Technology (USA)
+            \item There is a movement to redefine SI units based on fundamental physical constants ($c$, $h$, $e$, et cetera)
             \item Electric field standards based only on Planck's constant
-            \item Calibration becomes much easier
+            \item Simplifies calibration
         \end{itemize}
     \end{column}
     \begin{column}{0.48\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.8\textwidth]{images/international_prototype_of_the_kilogram.jpg}
+            \imagesource{https://www.nist.gov/si-redefinition/
+                kilogram-introduction}
+        \end{figure}
+    \end{column}
+\end{columnframe}
+
+\begin{columnframe}{Summary / Tying back to radar}
+    \begin{column}{0.5\textwidth}
         \begin{itemize}
-            \item one
-            \item two
-            \item three
+            \item Rydberg sensors would allow for a wide range of frequencies to be used in Radar
+            \item They would be smaller and more accurate
+            \item Feasibility has been proven, but the technology is still in its infancy
         \end{itemize}
     \end{column}
+    \begin{column}{0.5\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.8\textwidth]{images/rydberg_radar_nasa.png}
+            \imagesource{Darmindra Arumugam (NASA): Quantum Rydberg Radar (presentation)}
+        \end{figure}
 
+    \end{column}
 \end{columnframe}
 
 \begin{frame}{}
     \centering
+    \Large{Questions?}
+\end{frame}
+
+\begin{frame}{}
+    \centering
     \Large{Thank you for your attention}
+\end{frame}
+
+\begin{frame}{Backup: phase encoding}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{images/britanicca_phase_encoding.png}
+        \imagesource{Encyclopedia Britannica}
+    \end{figure}
 \end{frame}
 
 \end{document}
